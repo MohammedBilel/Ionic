@@ -1,0 +1,7 @@
+{
+  "name": "gestion des annonces",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
