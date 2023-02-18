@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ng-tasks-8cbbe": {
+      "hosting": {
+        "app": [
+          "ng-tasks-8cbbe"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ng-tasks-8cbbe"
+  }
+}

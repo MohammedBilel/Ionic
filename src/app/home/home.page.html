@@ -1,20 +1,71 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary" class="ion-text-center">
     <ion-title>
-      Blank
+      Welcome
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+   <ion-row class="ion-no-padding">
+    <ion-col class="ion-no-padding"> 
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Sunlight_in_a_modern_facade_%28Unsplash%29.jpg" />
+          
+    </ion-col>
+   
+  </ion-row>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-grid >
+   
+
+    <ion-row>
+      <ion-col  >
+        <ion-card-content style="margin-top: 3rem;"> 
+        </ion-card-content> 
+      </ion-col> 
+    </ion-row>
+
+  
+    <ion-row>
+      <ion-col size="6">
+        <ion-card-content   [routerLink]="'/users'"   
+        style="background-color: #1abc9c;padding: 42px;">
+          <h1> USERS</h1>  
+        </ion-card-content> 
+      </ion-col>
+      <ion-col size="6">
+        <ion-card-content   [routerLink]="'/news'"   
+          style="background-color: #3498db;padding: 42px;" >
+          <h1>NEWS</h1> 
+        </ion-card-content> 
+      </ion-col>
+    </ion-row>
+
+    <!-- <ion-row>
+      <ion-col size="6"> 
+          <ion-card-content style="background-color: #9b59b6;padding: 42px;">
+            <h2>List of info</h2>
+           <p>Hello world</p>
+          </ion-card-content> 
+      </ion-col>
+      <ion-col size="6">
+        <ion-card-content style="background-color: #e67e22;padding: 42px;">
+          <h2>List of info</h2>
+         <p>Hello world</p>
+        </ion-card-content> 
+      </ion-col>
+    </ion-row> -->
+  
+  
+     
+  </ion-grid> 
+
+ 
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
 </ion-content>

@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>add</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form #f="ngForm">
+    <label for="nom">title</label>
+
+    <input ngModel class="form-control" type="text" name="title" id="inputName">
+
+    <label for="image">Image</label>
+    <input ngModel class="form-control" type="url" name="image" id="inputImage">
+
+    <label for="image">Text</label>
+    <input ngModel class="form-control" type="url" name="text" id="inputText">
+
+    <ion-button color="primary" (click)="addNewNwes(f.value)">Add</ion-button>
+   </form>
+</ion-content>
